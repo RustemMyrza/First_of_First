@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Chat</title>
+      <link rel="stylesheet" href="Chat_style.css" type="text/css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <div id="wrapper">
+        <div id="back">
+            <a href="main_page-acc.html" class="back_home"> <- Back home</a>
+          </div>
+        <div id="head">
+            <h1>Chat</h1>
+        </div>
+        <div id="win">
+            <div id="friend">
+                <h4>Friend name</h4>
+            </div>
+            <div id="chat">
+                <div id="field">
+                    <div id="fieldformes">
+
+                    </div>
+                        <!--<p id="messageofchat"></p>-->
+                    <p id="type">Typing</p>
+                </div>
+                <div id="input">  
+                    <input type="text" id="yourmes">
+                    <button id="send" onclick="send()">-></button>
+                </div>
+            </div>
+        </div>
+        <div id="acc">
+            <button id="acc_name"></button>
+        </div>
+    </div>
+    <div id="wallpaper">
+        <div id="mask">
+            <video src="wallpaper_chat.mp4" id="video" autoplay muted loop></video>
+        </div>
+    </div>
+   </body>
+   <script src="Chat_script.js"></script>
+</html>

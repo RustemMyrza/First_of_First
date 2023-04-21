@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8" />
+        <title>Sign-up</title>
+        <link rel="stylesheet" href="registration_style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+        <div id="back">
+            <a href="main_page.html" class="back_home"> <- Back home</a>
+        </div>
+        <div class="content">
+            <div id="registration">
+                <div id="win">
+                  <div id="header_registration">
+                      <h1>Registration</h1>
+                    </div>
+                      <div id="form">
+                          <form action="#" id="form_reg" method="get" onsubmit="return false">
+                              
+                                    <div><p id="outlogin" class="res"></p></div>
+                                    <label for="login">Login</label>
+                                    <input type="text" name="login" id="login">
+
+                                    <div><p id="outfirstname" class="res"></p></div>
+                                    <label for="firstname">First name</label>
+                                    <input type="text" name="firstname" id="firstname">
+
+                                    <p id="outsurname" class="res"></p>
+                                    <label for="surname">Surname</label>
+                                    <input type="text" name="surname" id="surname">
+
+                                    <p id="outnickname" class="res"></p>
+                                    <label for="surname">Nickname</label>
+                                    <input type="text" name="nickname" id="nickname">
+
+                                    <p id="outgender" class="res"></p>
+                                    <label for="Gender">Gender</label>
+                                    <input type="radio" name="gender" id="gendermale" value="Male" checked>
+                                        <label for="gendermale">Male</label>
+                                        <input type="radio" name="gender" id="genderfemale" value="Female">
+                                        <label for="genderfemale">Female</label>
+                                        
+                                    <p id="outemail" class="res"></p>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+
+                                    <p id="outpassword" class="res"></p>
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password">
+
+                                    <p id="outconfpassword" class="res"></p>
+                                    <label for="confirmpassword">Confirm your password</label>
+                                    <input type="password" name="confirmpassword" id="confirmpassword">
+
+                                    <input type="submit" name="submit" id="submit" value="Sign-up">
+                                    <input type="reset" name="reset" id="reset" value="Clear">
+                          </form>
+                      </div>
+                </div>
+            </div>
+        </div>  
+          <div id="background">
+            <video src="video.mp4" class="video" autoplay muted loop></video>
+          </div>
+      </div>
+      <div id="footer">
+        <img src="logo_transparent.png" alt="logo" class="logo" id="footerlogo">
+        <p>©2021 Kazakhstan <br>Was created by Rustem Myrzagaliyev, Alikhan Zhusipnazar</p>
+    </div>
+   </body>
+   <script src="registration_script.js"></script>
+</html>

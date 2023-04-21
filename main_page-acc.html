@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Home</title>
+      <link rel="stylesheet" href="main_page_acc_style.css" type="text/css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+       <div id="wrapper">
+        <div id="logo">
+            <div id="account">
+                <button id="acc_name"></button>
+            </div>
+            <img src="logo_transparent.png" alt="logo" class="logo">
+           </div>
+            <div class="panel">   
+                <a href="#" class="nav">Home</a>
+                <a href="About_project_acc.html" class="nav">About project</a>
+                <a href="Chat.html" class="nav">Chat</a>
+           </div>
+           <div id="video">
+            <div id="mask">
+                <video src="video_main.mp4" autoplay muted loop class="video"></video>
+            </div>
+           </div>
+           <div id="join">
+            <img src="chat.png" alt="chat" id="badge">
+            <p>Do you wanna find a friends, but you are shy. <br> You can just join to chat with any person</p>
+            <button id="join_button" onclick="transfer()">Join to chat</button>
+           </div>
+           <div id="footer">
+               <img src="logo_transparent.png" alt="logo" class="logo" id="footerlogo">
+               <p>©2021 Kazakhstan <br>Was created by Rustem Myrzagaliyev, Alikhan Zhusipnazar</p>
+           </div>
+       </div>
+   </body>
+   <script>
+        let accname = JSON.parse(localStorage.getItem("active")) || [];
+        if(!(accname instanceof Array)){
+                    accname = [accname];
+                }
+        let i = accname.length;
+        console.log(accname);
+        document.getElementById("acc_name").innerHTML = accname[i-1];
+        function transfer(){
+            window.location.href = "Chat.html"
+        }
+   </script>
+</html>

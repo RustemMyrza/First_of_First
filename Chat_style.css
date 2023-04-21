@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+#video {
+    width: 98.93vw;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+#mask{
+    height: 100vh;
+    width: 98.93vw;
+    left: 0;
+    top: 0;
+}
+#mask::after{
+    display: block;
+    position: absolute;
+    width: 98.93vw;
+    height: 113.5vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+    content: "";
+}
+#win{
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0);
+    width: 350px;
+    height: auto;
+    left: 580px;
+    top:200px
+
+}
+#field{
+    width: 350px;
+    height: 425px;
+    border: solid 3px black;
+    background-color: white;
+    z-index: 3;
+    overflow: scroll;
+}
+#head{
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    left: 718px;
+    top: 30px;
+}
+#yourmes{
+    width: 300px;
+    height: 25px;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 5px;
+    margin-right: 5px;
+    z-index: 3;
+}
+#yourmes:focus{
+    outline: none;
+}
+#send{
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 3;
+}
+#friend{
+    text-align: center;
+    color: white;
+}
+#acc{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    right: 50px;
+    top: 30px;
+}
+#acc_name:hover{
+    background-color: #5e8ac4;
+    transition: 0.3s;
+}
+#acc_name:active{
+    background-color: #072955;
+    transition: 0.2s;
+}
+#acc_name{
+    color:rgb(255, 255, 255);
+    background-color: #0a4ba0;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+}
+#type{
+    position:absolute;
+    z-index: 4;
+    left: 5px;
+    bottom: 35px;
+    color: rgba(128, 128, 128, 0.5);
+    visibility: hidden;
+}
+#back{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 4;
+}
+.back_home{
+    text-decoration: none;
+    color: white;
+}
+.back_home:active{
+    color:rgb(128, 128, 128);
+    transition: 0.2s;
+}
